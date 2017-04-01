@@ -8,5 +8,6 @@ form.form(action='a.php' method='post' name='popup-form')
 	.input
 		label.input__label.input__label-phone(for='input-phone') Телефон
 		input.input__field#input-phone(type='phone' name='phone' placeholder='+7(495)555-55-55')
-	input.btn-popup(type='submit' value='Отменить')
-	input.btn-popup.btn-popup_active(type='submit' value='Подтверждаю участие')
+	.form__wrapper
+		input.btn-popup(type='submit' value='Отменить')
+		input.btn-popup.btn-popup_active(type='submit' value='Подтверждаю участие')
