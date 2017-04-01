@@ -32,12 +32,47 @@
             <input class="input__field" id="input-phone" type="phone" name="phone" placeholder="+7(495)555-55-55">
           </div>
           <div class="form__wrapper">
-            <input class="btn-popup" type="submit" value="Отменить">
+            <button class="btn-popup btn-popup-close">Отменить</button>
             <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
           </div>
         </form>
       </div>
     </header>
+    <main class="content">
+      <h2 class="content__title">Эмилия Ким</h2>
+      <div class="content__date">Родилась 23.04.2016</div>
+      <p class="content__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+      <div class="slider">
+        <ul class="slider__slides">
+          <li class="slider__slide"><img class="slider__img slider__img_show" src="../img/child.jpg"></li>
+          <li class="slider__slide"><img class="slider__img" src="../img/father.jpg"></li>
+          <li class="slider__slide"><img class="slider__img" src="../img/mother.jpg"></li>
+        </ul>
+        <div class="slider__control-wrapper">
+          <button class="slider__control" id="slide-previous">
+            <svg class="slider__control-img">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+            </svg>previous
+          </button>
+          <button class="slider__control" id="slide-next"> 
+            <svg class="slider__control-img slider__control-img_rotate">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+            </svg>next
+          </button>
+        </div>
+      </div>
+      <h2 class="content__title content__title-parents">Родители</h2><img class="content__img" src="../img/father.jpg">
+      <div class="content__text-wrapper">
+        <p class="content__text">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+        <div class="content__parents-name">Дмитрий Ким,<span class="content__parents-name_sm"> папа Эмилии</span></div>
+      </div><img class="content__img" src="../img/mother.jpg">
+      <div class="content__text-wrapper">
+        <p class="content__text">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+        <div class="content__parents-name">Ксения Ким,<span class="content__parents-name_sm"> мама Эмилии</span></div>
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

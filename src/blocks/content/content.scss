@@ -1,0 +1,55 @@
+.content {
+	padding-right: 10px;
+	padding-left: 10px;
+	background: url(../img/content-bg.jpg) no-repeat;
+	background-size: cover;
+
+	&__title {
+		padding-top: 40px;
+		font-size: 2em;
+		text-transform: uppercase;
+		color: $color-pink;
+	}
+
+	&__title-parents {
+		position: relative;
+		padding-top: 170px;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/bird.png) no-repeat;
+			background-size: cover;
+			content: '';
+		}
+	}
+
+	&__date {
+		font-weight: 600;
+		color: $color-pink;
+	}
+
+	&__text {
+		color: $color-text;
+	}
+
+	&__img {
+		width: 300px;
+		height: 300px;
+	}
+
+	&__parents-name {
+		margin-bottom: 60px;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: $color-pink;
+
+		&_sm {
+			font-size: .8em;
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
+}
