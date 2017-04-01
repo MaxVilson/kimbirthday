@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>День рождения Эмили Ким</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <h1 class="main-header__title">Приглашаем<br> на День Рождения<br> Эмилии Ким</h1>
+        <div class="main-header__date-wrapper">
+          <div class="main-header__date">28 Апреля 2017 года</div>
+        </div>
+        <button class="btn btn-popup-show main-header__btn">Подтвердить участие</button>
+      </div>
+      <div class="popup">
+        <div class="popup__title">Подтвердите участие</div>
+        <form class="form" action="a.php" method="post" name="popup-form">
+          <div class="input">
+            <label class="input__label input__label-name" for="input-name">Имя</label>
+            <input class="input__field" id="input-name" type="text" name="name" placeholder="Введите ваше имя">
+            <div class="input"></div>
+            <label class="input__label" for="input-count">Количество</label>
+            <input class="input__field input__field-number" id="input-count" type="number" name="number" placeholder="Количество гостей">
+          </div>
+          <div class="input">
+            <label class="input__label input__label-phone" for="input-phone">Телефон</label>
+            <input class="input__field" id="input-phone" type="phone" name="phone" placeholder="+7(495)555-55-55">
+          </div>
+          <input class="btn-popup" type="submit" value="Отменить">
+          <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
+        </form>
+      </div>
+    </header>
+    <script src="js/main.js"></script>
+  </body>
+</html>

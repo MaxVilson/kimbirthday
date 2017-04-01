@@ -1,0 +1,39 @@
+.btn {
+	position: relative;
+	padding: 10px 28px;
+	font-weight: 600;
+	color: #fff;
+	background: $color-pink;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+//Media querus
+@media (min-width: $grid-breakpoint-md) {
+	.btn {
+		padding: 20px 40px;
+		font-size: 1.4em;
+		transition: all .2s;
+
+		&:hover {
+			box-shadow: 5px 5px $color-pink-opacity;
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 1px solid transparent;
+			content: '';
+			transition: all .2s;
+		}
+
+		&:hover:before {
+			border: 1px solid $color-pink;
+			transform: translate(-5px, -5px);
+		}
+	}
+}

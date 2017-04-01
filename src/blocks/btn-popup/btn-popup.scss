@@ -1,0 +1,38 @@
+.btn-popup {
+	margin-top: 40px;
+	padding: 10px;
+	font-weight: 600;
+	color: $color-white;
+	background-color: transparent;
+	border: 2px solid $color-white;
+	transition: all .2s;
+
+	&:hover,
+	&:active {
+		color: $color-pink;
+		background-color: $color-white;
+	}
+
+	&_active {
+		margin-left: 10px;
+		color: $color-pink;
+		background-color: $color-white;
+
+		&:hover,
+		&:active {
+			color: $color-white;
+			background-color: transparent;
+			border: 2px solid $color-white;
+		}
+	}
+}
+
+//Media querus
+@media (min-width: $grid-breakpoint-md) {
+	.btn-popup {
+
+		&_active {
+			margin-left: 20px;
+		}
+	}
+}

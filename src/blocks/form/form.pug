@@ -1,0 +1,12 @@
+form.form(action='a.php' method='post' name='popup-form')
+	.input
+		label.input__label.input__label-name(for='input-name') Имя
+		input.input__field#input-name(type='text' name='name' placeholder='Введите ваше имя')
+		.input
+		label.input__label(for='input-count') Количество
+		input.input__field.input__field-number#input-count(type='number' name='number' placeholder='Количество гостей')
+	.input
+		label.input__label.input__label-phone(for='input-phone') Телефон
+		input.input__field#input-phone(type='phone' name='phone' placeholder='+7(495)555-55-55')
+	input.btn-popup(type='submit' value='Отменить')
+	input.btn-popup.btn-popup_active(type='submit' value='Подтверждаю участие')

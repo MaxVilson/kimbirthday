@@ -1,0 +1,40 @@
+.input {
+	text-align: left;
+	display: block;
+	margin-top: 40px;
+
+	&__label {
+		margin-right: 10px;
+		font-weight: 600;
+	}
+
+	&__label-name {
+		margin-right: 71px;
+	}
+
+	&__label-phone {
+		margin-right: 36px;
+	}
+
+	&__field {
+		padding-bottom: 5px;
+		padding-left: 7px;
+		color: $color-white;
+		vertical-align: top;
+		background-color: transparent;
+		border: none;
+		border-bottom: 2px dashed $color-pink-lighten;
+		outline: none;
+
+		&::placeholder {
+			color: $color-pink-lighten;
+		}
+	}
+
+	&__field-number {
+
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+}
