@@ -10,8 +10,8 @@
 	height: 100%;
 	color: $color-white;
 	background: $color-pink;
-	visibility: hidden;
-	transition: all 3s; 
+	transform: translateY(-100px);
+	transition: all .5s; 
 
 	&__title {
 		margin-top: 50px;
@@ -21,7 +21,6 @@
 	}
 
 	&__show {
-		visibility: visible;
-		transition: all 3s; 
+		transform: translateY(0);
 	}
 }
