@@ -1,7 +1,7 @@
 ;(function(window, document) {
   'use strict';
   var file = 'img/sprite-svg.svg', // путь к файлу спрайта на сервере
-      revision = 1;            // версия спрайта
+      revision = 2;            // версия спрайта
   if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) return true;
   var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
     request,
@@ -38,9 +38,7 @@
 }(window, document));
 let link = document.querySelector('.btn-popup-show');
 let popup = document.querySelector('.popup');
-let login = document.getElementById('input-name');
 link.addEventListener('click', function(event) {
 	event.preventDefault();
   popup.classList.add("popup__show");
-  login.focus();
 });
