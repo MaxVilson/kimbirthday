@@ -10,6 +10,7 @@
 	height: 100%;
 	color: $color-white;
 	background: $color-pink;
+	visibility: hidden;
 	transform: translateY(-100px);
 	transition: all .5s; 
 
@@ -21,6 +22,7 @@
 	}
 
 	&__show {
+		visibility: visible;
 		transform: translateY(0);
 	}
 }
