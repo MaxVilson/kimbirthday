@@ -7,6 +7,10 @@
 	border: none;
 	cursor: pointer;
 	outline: none;
+
+	&_s {
+		padding: 15px 30px;
+	}
 }
 
 //Media querus
@@ -15,6 +19,10 @@
 		padding: 20px 40px;
 		font-size: 1.4em;
 		transition: all .2s;
+
+		&_s {
+			padding: 15px 30px;
+		}
 
 		&:hover {
 			box-shadow: 5px 5px $color-pink-opacity;

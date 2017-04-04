@@ -12,8 +12,8 @@
 		text-transform: uppercase;
 		color: $color-pink;
 
-		&_lh_none {
-			line-height: 0;
+		&_margin_0 {
+			margin: 0;
 		}
 	}
 
@@ -29,10 +29,6 @@
 
 	&__text {
 		color: $color-text;
-
-		&_lh_none {
-			line-height: 0;
-		}
 	}
 
 	&__img-wrapper {

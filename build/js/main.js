@@ -53,6 +53,24 @@ addEventListener("keydown", function(event) {
   if (event.keyCode == 27)
     popup.classList.remove("popup__show");
 });
+let linkF = document.querySelector('.btn-popup-footer-show');
+let popupF = document.querySelector('.popup-footer');
+let closeF = document.querySelector('.btn-popup-closeF')
+
+linkF.addEventListener('click', function(event) {
+	event.preventDefault();
+  popupF.classList.add("popup-footer__show");
+});
+
+closeF.addEventListener("click", function(event) {
+  event.preventDefault();
+  popupF.classList.remove("popup-footer__show");
+});
+
+addEventListener("keydown", function(event) {
+  if (event.keyCode == 27)
+    popupF.classList.remove("popup-footer__show");
+});
 var slides = document.querySelectorAll('.slider__slides .slider__img');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide,4000);
@@ -147,3 +165,35 @@ $(document).ready(function(){
     else{ $('#rightControl').show() }
     }
   });
+var largeImg = document.getElementById('largeImg');
+
+    var thumbs = document.getElementById('thumbs');
+
+    thumbs.onclick = function(e) {
+      var target = e.target;
+
+      while (target != this) {
+
+        if (target.nodeName == 'A') {
+          showThumbnail(target.href, target.title);
+          return false;
+        }
+
+        target = target.parentNode;
+      }
+
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+
+
+    /* предзагрузка */
+    var imgs = thumbs.getElementsByTagName('img');
+    for (var i = 0; i < imgs.length; i++) {
+      var url = imgs[i].parentNode.href;
+      var img = document.createElement('img');
+      img.src = url;
+    }
