@@ -79,3 +79,71 @@ next.onclick = function() {
 previous.onclick = function() {
   previousSlide();
 };
+var slidesL = document.querySelectorAll('.slider-l__slides .slider-l__img');
+var currentSlideL = 0;
+var slideIntervalL = setInterval(nextSlideL,4000);
+var nextL = document.getElementById('slide-next_l');
+var previousL = document.getElementById('slide-previous_l');
+
+function nextSlideL() {
+  goToSlideL(currentSlideL+1);
+}
+
+function previousSlideL() {
+  goToSlideL(currentSlideL-1);
+}
+
+function goToSlideL(n) {
+  slidesL[currentSlideL].className = 'slider-l__img';
+  currentSlideL = (n+slidesL.length)%slidesL.length;
+  slidesL[currentSlideL].className = 'slider-l__img_show';
+}
+
+nextL.onclick = function() {
+  nextSlideL();
+};
+previousL.onclick = function() {
+  previousSlideL();
+};
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 300;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+  // Убираем прокрутку
+  $('#slidesContainer').css('overflow', 'hidden');
+  // Вставляем все .slides в блок #slideInner
+  slides
+  .wrapAll('<div id="slideInner"></div>')
+  // Float left to display horizontally, readjust .slides width
+  .css({
+    'float' : 'left',
+    'width' : slideWidth
+  });
+  // Устанавливаем ширину #slideInner, равную ширине всех слайдов
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+  // Прячем правую стрелку при загрузке скрипта
+  manageControls(currentPosition);
+  // Отлавливаем клик на класс .controls
+  $('.control')
+    .bind('click', function(){
+    // Определение новой позиции
+      currentPosition = ($(this).attr('id')=='rightControl')
+    ? currentPosition+1 : currentPosition-1;
+      // Прячет / показывает элементы контроля
+      manageControls(currentPosition);
+      // Move slideInner using margin-left
+      $('#slideInner').animate({
+        'marginLeft' : slideWidth*(-currentPosition)
+      });
+    });
+  // manageControls: показывает или скрывает стрелки в зависимости от значения currentPosition
+  function manageControls(position){
+    // Спрятать левую стрелку, если это левый слайд
+    if(position==0){ $('#leftControl').hide() }
+    else{ $('#leftControl').show() }
+    // Спрятать правую стрелку, если это последний слайд
+    if(position==numberOfSlides-1){ $('#rightControl').hide() }
+    else{ $('#rightControl').show() }
+    }
+  });

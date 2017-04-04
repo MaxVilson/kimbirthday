@@ -1,0 +1,18 @@
+.slider-l
+	.slider-l__slides-wrapper
+		ul.slider-l__slides
+			li.slider-l__slide
+				img.slider-l__img.slider-l__img_show(src='../img/child.jpg')
+			li.slider-l__slide
+				img.slider-l__img(src='../img/father.jpg')
+			li.slider-l__slide
+				img.slider-l__img(src='../img/mother.jpg')
+		.slider-l__control-wrapper
+			button.slider-l__control#slide-previous_l
+				svg.slider-l__control-img
+					use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow")
+				|previous
+			button.slider-l__control#slide-next_l
+				svg.slider-l__control-img.slider__control-img_rotate
+					use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow")
+				|next

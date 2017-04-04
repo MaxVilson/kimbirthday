@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>День рождения Эмили Ким</title>
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <h1 class="main-header__title">Приглашаем<br> на День Рождения<br> Эмилии Ким</h1>
-        <div class="main-header__date-wrapper">
-          <div class="main-header__date">28 Апреля 2017 года</div>
+        <div class="container">
+          <h1 class="main-header__title">Приглашаем<br> на День Рождения<br> Эмилии Ким</h1>
+          <div class="main-header__date-wrapper">
+            <div class="main-header__date">28 Апреля 2017 года</div>
+          </div>
+          <button class="btn btn-popup-show main-header__btn">Подтвердить участие</button>
         </div>
-        <button class="btn btn-popup-show main-header__btn">Подтвердить участие</button>
       </div>
       <div class="popup">
         <div class="popup__title">Подтвердите участие</div>
@@ -39,38 +42,207 @@
       </div>
     </header>
     <main class="content">
-      <h2 class="content__title">Эмилия Ким</h2>
-      <div class="content__date">Родилась 23.04.2016</div>
-      <p class="content__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
-      <div class="slider">
-        <ul class="slider__slides">
-          <li class="slider__slide"><img class="slider__img slider__img_show" src="../img/child.jpg"></li>
-          <li class="slider__slide"><img class="slider__img" src="../img/father.jpg"></li>
-          <li class="slider__slide"><img class="slider__img" src="../img/mother.jpg"></li>
-        </ul>
-        <div class="slider__control-wrapper">
-          <button class="slider__control" id="slide-previous">
-            <svg class="slider__control-img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-            </svg>previous
-          </button>
-          <button class="slider__control" id="slide-next"> 
-            <svg class="slider__control-img slider__control-img_rotate">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
-            </svg>next
-          </button>
+      <div class="container">
+        <h2 class="content__title">Эмилия Ким</h2>
+        <div class="content__wrapper">
+          <div class="content__text-wrapper">
+            <div class="content__date">Родилась 23.04.2016</div>
+            <p class="content__text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+          </div>
+          <div class="slider">
+            <ul class="slider__slides">
+              <li class="slider__slide"><img class="slider__img slider__img_show" src="../img/child.jpg"></li>
+              <li class="slider__slide"><img class="slider__img" src="../img/father.jpg"></li>
+              <li class="slider__slide"><img class="slider__img" src="../img/mother.jpg"></li>
+            </ul>
+            <div class="slider__control-wrapper">
+              <button class="slider__control" id="slide-previous">
+                <svg class="slider__control-img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                </svg>previous
+              </button>
+              <button class="slider__control" id="slide-next"> 
+                <svg class="slider__control-img slider__control-img_rotate">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                </svg>next
+              </button>
+            </div>
+          </div>
+        </div>
+        <h2 class="content__title content__title-parents">Родители</h2>
+        <div class="content__wrapper">
+          <div class="content__img-wrapper"><img class="content__img" src="../img/father.jpg"></div>
+          <div class="content__text-wrapper">
+            <p class="content__text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+            <div class="content__parents-name">Дмитрий Ким,<span class="content__parents-name_sm"> папа Эмилии</span></div>
+          </div>
+        </div>
+        <div class="content__wrapper">
+          <div class="content__img-wrapper content__img-wrapper-mother"><img class="content__img" src="../img/mother.jpg"></div>
+          <div class="content__text-wrapper content__text-wrapper-mother">
+            <p class="content__text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
+            <div class="content__parents-name content__parents-name_margin_0">Ксения Ким,<span class="content__parents-name_sm"> мама Эмилии</span></div>
+          </div>
+        </div>
+        <h2 class="content__title">Семья Ким</h2>
+        <div class="content__slider_l">
+          <div class="slider-l">
+            <div class="slider-l__slides-wrapper">
+              <ul class="slider-l__slides">
+                <li class="slider-l__slide"><img class="slider-l__img slider-l__img_show" src="../img/child.jpg"></li>
+                <li class="slider-l__slide"><img class="slider-l__img" src="../img/father.jpg"></li>
+                <li class="slider-l__slide"><img class="slider-l__img" src="../img/mother.jpg"></li>
+              </ul>
+              <div class="slider-l__control-wrapper">
+                <button class="slider-l__control" id="slide-previous_l">
+                  <svg class="slider-l__control-img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>previous
+                </button>
+                <button class="slider-l__control" id="slide-next_l">
+                  <svg class="slider-l__control-img slider__control-img_rotate">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>next
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <h2 class="content__title content__title-parents">Родители</h2><img class="content__img" src="../img/father.jpg">
-      <div class="content__text-wrapper">
-        <p class="content__text">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
-        <div class="content__parents-name">Дмитрий Ким,<span class="content__parents-name_sm"> папа Эмилии</span></div>
-      </div><img class="content__img" src="../img/mother.jpg">
-      <div class="content__text-wrapper">
-        <p class="content__text">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis a eius obcaecati autem, optio? Aut vitae magnam obcaecati nemo, distinctio porro ducimus harum eligendi in nesciunt accusamus consequatur inventore, voluptates.</p>
-        <div class="content__parents-name">Ксения Ким,<span class="content__parents-name_sm"> мама Эмилии</span></div>
+      <div class="instruction">
+        <div class="container">
+          <div class="instruction__wrapper">
+            <h2 class="instruction__title">Инструкция гостю</h2>
+            <div class="slider-reviews">
+              <div class="slider-reviews__wrapper">
+                <div id="slideshow">
+                  <div id="slidesContainer">
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 1/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 2/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 3/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 4/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 5/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 6/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 7/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 8/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 9/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide__reviews"> 
+                        <div class="slide__title">Правило 10/10</div>
+                        <div class="slide__text"> 
+                          Первое и главное! Это не свадьба,<br>
+                          а свадебная вечеринка, поэтому<br> 
+                          приготовься — всё будет круто.                                                                   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-reviews-control">
+                <button class="control control_margin_0" id="leftControl">Предыдущий отзыв
+                  <svg class="slider__control-img">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>previous
+                </button>
+                <button class="control" id="rightControl">Следующий отзыв
+                  <svg class="slider__control-img slider__control-img_rotate">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+                  </svg>next
+                </button>
+              </div>
+            </div>
+            <div class="instruction__img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="content__title content__title_lh_none">Фотоотчет</h2>
+        <p class="content__text content__text_lh_none">Здесь будут фото со Дня Рождения Эмику</p>
       </div>
     </main>
     <script src="js/main.js"></script>

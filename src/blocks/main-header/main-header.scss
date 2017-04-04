@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 10px 20px;
+	box-sizing: border-box;
 	text-align: center;
 	background: url(../img/main-header.jpg) no-repeat;
 	background-size: cover;
@@ -60,6 +61,7 @@
 
 @media (min-width: $grid-breakpoint-xl) {
 	.main-header {
+		height: 100vh;
 		
 		&__title {
 			font-size: 4em;
