@@ -1,0 +1,18 @@
+{
+  "name": "kimbirthday",
+  "version": "0.0.0",
+  "authors": [
+    "Maxim Vavilkin"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "normalize.css": "*"
+  }
+}
