@@ -17,7 +17,7 @@
 	transition: all .5s; 
 
 	&__title {
-		margin-top: 200px;
+		margin-top: 250px;
 		font-size: 1.3em;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -26,5 +26,15 @@
 	&__show {
 		visibility: visible;
 		transform: translateY(0);
+	}
+}
+
+//Media querus
+@media (min-width: $grid-breakpoint-md) {
+	.popup-footer {
+
+		&__title {
+			margin-top: 0;
+		}
 	}
 }
