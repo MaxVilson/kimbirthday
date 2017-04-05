@@ -73,7 +73,7 @@ addEventListener("keydown", function(event) {
 });
 var slides = document.querySelectorAll('.slider__slides .slider__img');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,8000);
+var slideInterval = setInterval(nextSlide,80000);
 var next = document.getElementById('slide-next');
 var previous = document.getElementById('slide-previous');
 
@@ -99,7 +99,7 @@ previous.onclick = function() {
 };
 var slidesL = document.querySelectorAll('.slider-l__slides .slider-l__img');
 var currentSlideL = 0;
-var slideIntervalL = setInterval(nextSlideL,8000);
+var slideIntervalL = setInterval(nextSlideL,80000);
 var nextL = document.getElementById('slide-next_l');
 var previousL = document.getElementById('slide-previous_l');
 
