@@ -20,6 +20,7 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 40px;
 	}
 
 	&__title-parents {
@@ -77,7 +78,6 @@
 	}
 
 	&__parents-name {
-		margin-bottom: 40px;
 		font-size: 1.4em;
 		font-weight: 600;
 		color: $color-pink;
