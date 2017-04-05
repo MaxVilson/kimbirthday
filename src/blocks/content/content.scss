@@ -1,12 +1,8 @@
 .content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background: url(../img/content-bg.jpg) no-repeat;
 	background-size: contain;
 
 	&__title {
-		padding-top: 40px;
 		font-size: 2em;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -15,11 +11,19 @@
 		&_margin_0 {
 			margin: 0;
 		}
+
+		&_mt_50 {
+			margin-top: 50px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__title-parents {
 		position: relative;
-		margin-bottom: 80px;
 	}
 
 	&__date {
@@ -27,18 +31,49 @@
 		color: $color-pink;
 	}
 
+	&__text-wrapper {
+		width: 40%;
+	}
+
 	&__text {
 		color: $color-text;
+
+		&_padding_left {
+			padding-left: 10px;
+		}
+
+		&_padding_right {
+			padding-right: 10px;
+		}
+	}
+
+	&__slider {
+		width: 60%
+	}
+
+	&__bird {
+		background-size: contain;
+
+		& img {
+			max-width: 100%;
+		}
 	}
 
 	&__img-wrapper {
-		display: flex;
-		justify-content: center;
+		width: 60%
 	}
 
 	&__img {
-		width: 300px;
-		height: 300px;
+		width: 100%;
+		height: auto;
+	}
+
+	&__img-wrapper-mother {
+		order: 2;
+	}
+
+	&__text-wrapper-mother {
+		order: 1;
 	}
 
 	&__parents-name {
@@ -56,35 +91,33 @@
 		&_margin_0 {
 			margin-bottom: 0;
 		}
+
+		&_padding_left {
+			padding-left: 10px;
+		}
+
+		&_padding_right {
+			padding-right: 10px;
+		}
+	}
+
+	&__slider_l {
+		position: relative;
+	}
+
+	&__cat {
+		position: absolute;
+		top: -110px;
+		right: 0;
+		width: 100px;
+		height: 100px;
+		background: url(../img/cat.png) no-repeat;
+		background-size: contain;
+		content: '';
 	}
 }
 
 //Media querus
-@media (width: 320px) {
-	.content {
-
-		&__title {
-			padding-right: 20px;
-			padding-left: 20px;
-		}
-    
-    &__date {
-    	padding-right: 20px;
-    	padding-left: 20px;
-    }
-
-    &__text {
-    	padding-right: 20px;
-    	padding-left: 20px;
-    }
-
-    &__parents-name {
-    	padding-right: 20px;
-    	padding-left: 20px;
-    }
-	}
-}
-
 @media (min-width: $grid-breakpoint-md) {
 	.content {
 		display: block;
@@ -95,18 +128,6 @@
 
 		&__title-parents {
 			margin-right: 100px;
-
-			&:before {
-				position: absolute;
-				top: -150px;
-				left: 0;
-				width: 400px;
-				height: 400px;
-				background: url(../img/bird.png) no-repeat;
-				background-size: contain;
-				content: '';
-				z-index: 10;
-			}
 		}
 
 		&__wrapper {
@@ -138,31 +159,19 @@
 			text-align: right;
 		}
 
-		&__img-wrapper-mother {
-			order: 2;
-		}
-
-		&__text-wrapper-mother {
-			order: 1;
+		&__cat {
+			width: 150px;
+			height: 150px;
 		}
 	}
 }
 
 @media (min-width: $grid-breakpoint-xl) {
 	.content {
-		&__slider_l {
-			position: relative;
 
-			&:before {
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 400px;
-				height: 400px;
-				background: url(../img/cat.png) no-repeat;
-				background-size: cover;
-				content: '';
-			}
+		&__cat {
+			width: 300px;
+			height: 300px;
 		}
 	}
 }

@@ -4,10 +4,22 @@
   flex-wrap: wrap;
 
   &__wrapper {
+    position: relative;
     padding: 10px;
     width: 300px;
     background: $color-white;
     border-radius: 100%;
+  }
+
+  &__babe {
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    right: 30px;
+    width: 100px;
+    height: 200px;
+    background: url(../img/babe_s.png) no-repeat;
+    background-size: contain;
   }
 }
 
@@ -76,6 +88,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    &__babe {
+      top: -100px;
+      right: -400px;
+      width: 290px;
+      height: 670px;
+    }
   }
 
   .slider-reviews-control {
@@ -84,5 +103,17 @@
 
   .control {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $grid-breakpoint-xl) {
+  .slider-reviews {
+
+    &__babe {
+      top: -100px;
+      right: -800px;
+      width: 290px;
+      height: 670px;
+    }
   }
 }

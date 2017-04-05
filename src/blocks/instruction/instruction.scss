@@ -1,8 +1,10 @@
 .instruction {
 	margin-top: 40px;
+	padding-bottom: 20px;
 	background: $color-yellow;
 
 	&__title {
+		margin-bottom: 80px;
 		font-size: 2.5em;
 	}
 }
@@ -17,19 +19,14 @@
 @media (min-width: $grid-breakpoint-md) {
 	.instruction {
 		padding-top: 20px;
+		padding-right: 20px;
 		padding-bottom: 50px;
+		padding-left: 20px;
+	}
+}
 
-		&__wrapper {
-			position: relative;
-		}
-
-		&__img {
-			position: absolute;
-			top: -20px;
-			right: 100px;
-			width: 290px;
-			height: 670px;
-			background: url(../img/babe_s.png);
-		}
+@media (min-width: $grid-breakpoint-xl) {
+	.instruction {
+		padding-left: 100px;
 	}
 }

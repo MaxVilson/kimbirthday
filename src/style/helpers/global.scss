@@ -1,4 +1,12 @@
 body {
 	margin: 0;
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: $font-light;
+}
+
+h1 {
+	font-family: $font-bold;
+}
+
+h2 {
+	font-family: $font-medium;
 }
