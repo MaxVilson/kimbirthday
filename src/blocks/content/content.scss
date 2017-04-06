@@ -45,6 +45,7 @@
 	&__slider {
 		position: relative;
 		float: left;
+		padding-top: 40px;
 		padding-right: 10px;
 		width: 60%
 	}
@@ -125,6 +126,10 @@
 
 		&__title {
 			font-size: 3em;
+		}
+
+		&__date {
+			padding-bottom: 20px;
 		}
 
 		&__title-parents {
