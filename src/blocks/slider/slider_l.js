@@ -1,6 +1,6 @@
 var slidesL = document.querySelectorAll('.slider-l__slides .slider-l__img');
 var currentSlideL = 0;
-var slideIntervalL = setInterval(nextSlideL,800);
+var slideIntervalL = setInterval(nextSlideL,5000);
 var nextL = document.getElementById('slide-next_l');
 var previousL = document.getElementById('slide-previous_l');
 

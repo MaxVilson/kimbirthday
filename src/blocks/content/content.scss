@@ -19,9 +19,9 @@
 
 	&__wrapper {
 		position: relative;
-		display: flex;
 		justify-content: space-between;
 		margin-bottom: 40px;
+		overflow: auto;
 	}
 
 	&__title-parents {
@@ -38,20 +38,14 @@
 	}
 
 	&__text {
+		padding-bottom: 6px;
 		color: $color-text;
-
-		&_padding_left {
-			padding-left: 10px;
-		}
-
-		&_padding_right {
-			padding-right: 10px;
-		}
 	}
 
 	&__slider {
 		position: relative;
-		padding-top: 40px;
+		float: left;
+		padding-right: 10px;
 		width: 60%
 	}
 
@@ -64,6 +58,8 @@
 	}
 
 	&__img-wrapper {
+		float: left;
+		padding-right: 10px;
 		width: 60%
 	}
 
@@ -73,6 +69,8 @@
 	}
 
 	&__img-wrapper-mother {
+		float: right;
+		padding-left: 10px;
 		order: 2;
 	}
 
@@ -134,19 +132,17 @@
 		}
 
 		&__wrapper {
-			display: flex;
 			margin-bottom: 80px;
+			clear: both;
 		}
 
 		&__text {
-			width: 80%;
 			font-size: 1.3em;
 			line-height: 2.5em;
 		}
 
 		&__img-wrapper {
 			width: 50%;
-			margin-right: 80px;
 		}
 
 		&__img {
@@ -173,8 +169,8 @@
 	.content {
 
 		&__cat {
-			width: 300px;
-			height: 300px;
+			width: 400px;
+			height: 400px;
 		}
 	}
 }
