@@ -20,6 +20,13 @@
 		color: #434343;
 	}
 
+	&__text {
+		margin-top: 10px;
+		font-size: 1em;
+		font-family: $font-bold;
+		color: #434343;
+	}
+
 	&__btn {
 		margin-top: 40px;
 		margin-bottom: 20px;
@@ -42,6 +49,10 @@
 		&__date {
 			position: relative;
 			font-size: 2em;
+		}
+
+		&__text {
+			font-size: 1.2em;
 		}
 
 		&__btn {
