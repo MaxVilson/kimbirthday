@@ -14,7 +14,7 @@
           <h1 class="main-header__title">Приглашаем<br> на День Рождения<br> Эмилии Ким</h1>
           <div class="main-header__date-wrapper">
             <div class="main-header__date">28 Апреля 2017 года</div>
-            <div class="main-header__text">Начало в 18.00, ресторан "Han Bel"</div>
+            <div class="main-header__text">Начало в 18.00, ресторан<br> "Han Bel"</div>
           </div>
           <button class="btn btn-popup-show main-header__btn">Подтвердить участие</button>
         </div>
@@ -22,21 +22,27 @@
       <div class="popup">
         <div class="popup__title">Подтвердите участие</div>
         <form class="form" action="a.php" method="post" name="popup-form">
-          <div class="input">
-            <label class="input__label input__label-name" for="input-name">Имя</label>
-            <input class="input__field" id="input-name" type="text" name="name" placeholder="Введите ваше имя">
-          </div>
-          <div class="input">
-            <label class="input__label" for="input-count">Количество</label>
-            <input class="input__field input__field-number" id="input-count" type="number" name="number" placeholder="Количество гостей">
-          </div>
-          <div class="input">
-            <label class="input__label input__label-phone" for="input-phone">Телефон</label>
-            <input class="input__field" id="input-phone" type="tel" name="phone" placeholder="+7(495)555-55-55">
-          </div>
           <div class="form__wrapper">
-            <button class="btn-popup btn-popup-close">Отменить</button>
-            <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
+            <div class="input">
+              <label class="input__label input__label-name" for="input-name">Имя</label>
+              <input class="input__field" id="input-name" type="text" name="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="input">
+              <label class="input__label" for="input-adult">Количество взрослых </label>
+              <input class="input__field input__field-number" id="input-adult" type="number" name="adult" placeholder="2">
+            </div>
+            <div class="input">
+              <label class="input__label" for="input-child">Количество детей </label>
+              <input class="input__field input__field-number" id="input-child" type="number" name="child" placeholder="3">
+            </div>
+            <div class="input">
+              <label class="input__label input__label-phone" for="input-phone">Телефон</label>
+              <input class="input__field" id="input-phone" type="tel" name="phone" placeholder="+7(495)555-55-55">
+            </div>
+            <div class="form__wrapper">
+              <button class="btn-popup btn-popup-close">Отменить</button>
+              <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
+            </div>
           </div>
         </form>
       </div>
@@ -291,21 +297,27 @@
       <div class="popup-footer">
         <div class="popup-footer__title">Подтвердите участие</div>
         <form class="form" action="a.php" method="post" name="popup-form">
-          <div class="input">
-            <label class="input__label input__label-name" for="input-namef">Имя</label>
-            <input class="input__field" id="input-namef" type="text" name="namef" placeholder="Введите ваше имя">
-          </div>
-          <div class="input">
-            <label class="input__label" for="input-countf">Количество</label>
-            <input class="input__field input__field-number" id="input-countf" type="number" name="numberf" placeholder="Количество гостей">
-          </div>
-          <div class="input">
-            <label class="input__label input__label-phone" for="input-phonef">Телефон</label>
-            <input class="input__field" id="input-phonef" type="tel" name="phonef" placeholder="+7(495)555-55-55">
-          </div>
           <div class="form__wrapper">
-            <button class="btn-popup btn-popup-close btn-popup-closeF">Отменить</button>
-            <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
+            <div class="input">
+              <label class="input__label input__label-name" for="input-namef">Имя</label>
+              <input class="input__field" id="input-namef" type="text" name="namef" placeholder="Введите ваше имя">
+            </div>
+            <div class="input">
+              <label class="input__label" for="input-adultf">Количество взрослых </label>
+              <input class="input__field input__field-number" id="input-adultf" type="number" name="adult" placeholder="2">
+            </div>
+            <div class="input">
+              <label class="input__label" for="input-childf">Количество детей </label>
+              <input class="input__field input__field-number" id="input-childf" type="number" name="child" placeholder="3">
+            </div>
+            <div class="input">
+              <label class="input__label input__label-phone" for="input-phonef">Телефон</label>
+              <input class="input__field" id="input-phonef" type="tel" name="phonef" placeholder="+7(495)555-55-55">
+            </div>
+            <div class="form__wrapper">
+              <button class="btn-popup btn-popup-close btn-popup-closeF">Отменить</button>
+              <input class="btn-popup btn-popup_active" type="submit" value="Подтверждаю участие">
+            </div>
           </div>
         </form>
       </div>

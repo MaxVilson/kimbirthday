@@ -1,13 +1,17 @@
 form.form(action='a.php' method='post' name='popup-form')
-	.input
-		label.input__label.input__label-name(for='input-namef') Имя
-		input.input__field#input-namef(type='text' name='namef' placeholder='Введите ваше имя')
-	.input
-		label.input__label(for='input-countf') Количество
-		input.input__field.input__field-number#input-countf(type='number' name='numberf' placeholder='Количество гостей')
-	.input
-		label.input__label.input__label-phone(for='input-phonef') Телефон
-		input.input__field#input-phonef(type='tel' name='phonef' placeholder='+7(495)555-55-55')
 	.form__wrapper
-		button.btn-popup.btn-popup-close.btn-popup-closeF Отменить
-		input.btn-popup.btn-popup_active(type='submit' value='Подтверждаю участие')
+		.input
+			label.input__label.input__label-name(for='input-namef') Имя
+			input.input__field#input-namef(type='text' name='namef' placeholder='Введите ваше имя')
+		.input
+			label.input__label(for='input-adultf') Количество взрослых 
+			input.input__field.input__field-number#input-adultf(type='number' name='adult' placeholder='2')
+		.input
+			label.input__label(for='input-childf') Количество детей 
+			input.input__field.input__field-number#input-childf(type='number' name='child' placeholder='3')
+		.input
+			label.input__label.input__label-phone(for='input-phonef') Телефон
+			input.input__field#input-phonef(type='tel' name='phonef' placeholder='+7(495)555-55-55')
+		.form__wrapper
+			button.btn-popup.btn-popup-close.btn-popup-closeF Отменить
+			input.btn-popup.btn-popup_active(type='submit' value='Подтверждаю участие')
